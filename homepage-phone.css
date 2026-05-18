@@ -1,0 +1,119 @@
+@media(max-width:1100px){
+
+.hero-content h1,
+.about-right h2,
+.section-header h2,
+.health-content h2,
+.cta-box h2{
+    font-size:52px;
+}
+
+.breed-cards,
+.health-grid,
+.stats-section,
+.about-section{
+    grid-template-columns:1fr;
+}
+
+.featured-card{
+    transform:none;
+}
+
+.about-section{
+    gap:60px;
+}
+}
+
+@media(max-width:768px){
+.hero-logo img{
+    width:42%;
+    min-width:120px;
+    max-width:180px;
+    border-radius:22px;
+}
+.cursor{
+    display:none;
+}
+
+.hero{
+    padding:20px 5%;
+}
+
+.nav-links,
+.nav-btn{
+    display:none;
+}
+
+.menu-btn{
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+}
+
+.menu-btn span{
+    width:28px;
+    height:3px;
+    background:white;
+    border-radius:10px;
+}
+
+.hero-content{
+    margin-top:90px;
+}
+
+.hero-content h1,
+.about-right h2,
+.section-header h2,
+.health-content h2,
+.cta-box h2{
+    font-size:42px;
+}
+
+.hero-content p,
+.about-right p,
+.cta-box p{
+    font-size:15px;
+}
+
+.hero-buttons,
+.cta-buttons{
+    flex-direction:column;
+}
+
+.premium-btn,
+.glass-btn{
+    width:100%;
+}
+
+.stats-section,
+.about-section,
+.breeds-section,
+.health-section,
+.cta-section{
+    padding-left:5%;
+    padding-right:5%;
+}
+
+.stat-card,
+.health-card,
+.cta-box{
+    padding:35px 25px;
+}
+
+.image-grid{
+    grid-template-columns:1fr;
+}
+
+.large-img{
+    min-height:280px;
+}
+
+.health-grid{
+    margin-top:40px;
+}
+
+.footer-links{
+    flex-direction:column;
+    gap:15px;
+}
+}
