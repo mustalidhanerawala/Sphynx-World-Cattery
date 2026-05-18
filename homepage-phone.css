@@ -117,3 +117,14 @@
     gap:15px;
 }
 }
+.breed-image{
+    height:260px;
+}
+
+.image-box{
+    min-height:220px;
+}
+
+.image-box img{
+    object-position:center;
+}
