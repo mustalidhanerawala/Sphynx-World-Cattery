@@ -1,10 +1,14 @@
-@media(max-width:1100px){
-section{
-    width:100%;
+@media screen and (max-width:1100px){
+
+*{
     max-width:100%;
+}
+
+body{
     overflow-x:hidden;
 }
 
+section,
 .hero,
 .stats-section,
 .about-section,
@@ -14,234 +18,334 @@ section{
 .cta-section,
 .footer{
     width:100%;
-    padding-left:4%;
-    padding-right:4%;
-    margin-left:0;
-    margin-right:0;
+    max-width:100%;
+    padding-left:4vw;
+    padding-right:4vw;
+    margin:0;
+    overflow-x:hidden;
 }
+
 .hero-content h1,
 .about-right h2,
 .section-header h2,
 .health-content h2,
 .cta-box h2{
-    font-size:52px;
+    font-size:clamp(2.4rem,5vw,4rem);
+    line-height:1;
 }
 
-.breed-cards,
-.stats-section{
+.breed-cards{
     grid-template-columns:1fr;
+}
+
+.stats-section{
+    grid-template-columns:repeat(3,1fr);
+    gap:2vw;
+}
+
+.health-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:2vw;
 }
 
 .featured-card{
     transform:none;
 }
-
-
-
-.health-grid{
-    grid-template-columns:repeat(2,1fr);
-    gap:20px;
-}
 }
 
-@media(max-width:768px){
 
-.hero-logo img{
-    width:65%;
-    min-width:180px;
-    max-width:280px;
-    border-radius:26px;
+
+@media screen and (max-width:768px){
+
+body{
+    overflow-x:hidden;
 }
 
 .cursor{
     display:none;
 }
 
-.hero{
-    padding:12px 5%;
-    min-height:auto;
-}
+
+
+/* NAVBAR */
 
 .navbar{
+    width:100%;
+    display:flex;
     justify-content:center;
-    gap:20px;
+    align-items:center;
     flex-wrap:wrap;
-    margin-bottom:10px;
+    gap:3vw;
+    margin-bottom:2vh;
 }
 
 .nav-links{
     display:flex;
-    gap:18px;
-    flex-wrap:wrap;
     justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:4vw;
 }
 
 .nav-links a{
-    font-size:13px;
+    font-size:0.82rem;
 }
 
 .nav-btn{
     display:block;
-    padding:12px 18px;
-    font-size:13px;
+    width:auto;
+    padding:0.8rem 1.2rem;
+    font-size:0.8rem;
 }
 
 .menu-btn{
     display:none;
 }
 
+
+
+/* LOGO */
+
+.hero-logo{
+    margin:2vh auto;
+}
+
+.hero-logo img{
+    width:48vw;
+    max-width:320px;
+    min-width:180px;
+    border-radius:1.5rem;
+}
+
+
+
+/* HERO */
+
+.hero{
+    min-height:auto;
+    padding-top:2vh;
+    padding-bottom:4vh;
+}
+
 .hero-content{
-    margin-top:35px;
+    margin-top:2vh;
     text-align:center;
+    width:100%;
 }
 
-.hero-content h1,
-.about-right h2,
-.section-header h2,
-.health-content h2,
-.cta-box h2{
-    font-size:34px;
-    line-height:1.1;
+.hero-content h1{
+    font-size:clamp(2.2rem,9vw,3.5rem);
+    line-height:1;
 }
 
-.hero-content p,
-.about-right p,
-.cta-box p{
-    font-size:14px;
+.hero-content p{
+    font-size:0.95rem;
     line-height:1.7;
+    width:100%;
 }
 
 .hero-buttons,
 .cta-buttons{
+    display:flex;
     flex-direction:column;
-    gap:14px;
-    margin-top:25px;
+    gap:1rem;
+    margin-top:2vh;
 }
 
 .premium-btn,
 .glass-btn{
     width:100%;
-    padding:15px 20px;
+    padding:1rem;
 }
+
+
+
+/* SECTIONS */
 
 .stats-section,
 .about-section,
 .breeds-section,
 .health-section,
-.cta-section,
-.reviews-section{
-    padding-left:5%;
-    padding-right:5%;
+.reviews-section,
+.cta-section{
+    width:100%;
+    padding-top:6vh;
+    padding-bottom:6vh;
 }
+
+
+
+/* STATS */
 
 .stats-section{
-    margin-top:25px;
-    gap:18px;
-}
-
-.about-section{
-    grid-template-columns:1fr 1fr;
-    gap:18px;
-    padding-top:70px;
-    padding-bottom:70px;
-    grid-template-columns:48% 48%;
-    justify-content:space-between;
-}
-
-.image-grid{
+    margin-top:2vh;
     grid-template-columns:1fr;
-    gap:14px;
+    gap:2vh;
 }
 
-.image-box{
-    min-height:185px;
-}
-
-.large-img{
-    min-height:185px;
-}
-
-.image-box img{
-    object-position:center;
-}
-.about-left,
-.about-right{
-    height:100%;
-}
-
-.about-right{
-    justify-content:space-between;
-}
-
-.stat-card,
-.health-card,
-.cta-box{
-    padding:25px 18px;
+.stat-card{
+    padding:2rem 1rem;
 }
 
 .stat-card h2{
-    font-size:42px;
+    font-size:clamp(2rem,8vw,3rem);
 }
 
+
+
+/* ABOUT SECTION */
+
+.about-section{
+    display:grid;
+    grid-template-columns:48% 48%;
+    justify-content:space-between;
+    align-items:stretch;
+    gap:4vw;
+}
+
+.about-left,
+.about-right{
+    width:100%;
+    height:100%;
+}
+
+
+
+/* IMAGE COLUMN */
+
+.image-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:2vh;
+    height:100%;
+}
+
+.image-box,
+.large-img{
+    width:100%;
+    min-height:28vh;
+    height:28vh;
+    border-radius:1.5rem;
+    overflow:hidden;
+}
+
+.image-box img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center;
+}
+
+
+
+/* TEXT COLUMN */
+
+.about-right{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.about-right h2,
+.section-header h2,
+.health-content h2,
+.cta-box h2{
+    font-size:clamp(2rem,7vw,3rem);
+    line-height:1.05;
+}
+
+.about-right p,
+.cta-box p,
+.hero-content p{
+    font-size:0.92rem;
+    line-height:1.7;
+}
+
+
+
+/* BREEDS */
+
+.breed-image{
+    height:32vh;
+}
+
+
+
+/* HEALTH */
+
 .health-grid{
-    grid-template-columns:repeat(2,1fr);
-    gap:15px;
-    margin-top:30px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:2vh 3vw;
+    margin-top:3vh;
 }
 
 .health-card{
-    padding:22px 12px;
-    border-radius:20px;
+    padding:1.2rem 0.8rem;
+    border-radius:1.2rem;
 }
 
 .health-card h3{
-    font-size:14px;
-    line-height:1.4;
+    font-size:0.82rem;
+    line-height:1.5;
 }
 
 .health-icon{
-    width:50px;
-    height:50px;
-    font-size:22px;
-    margin-bottom:15px;
+    width:3rem;
+    height:3rem;
+    font-size:1.2rem;
+    margin-bottom:1rem;
 }
 
-.breed-image{
-    height:240px;
-}
+
+
+/* REVIEWS */
 
 .review-card{
-    width:280px;
+    width:72vw;
 }
 
 .review-image{
-    height:210px;
+    height:28vh;
 }
 
 .review-content{
-    padding:22px;
+    padding:1.3rem;
 }
 
+
+
+/* CTA */
+
+.cta-box{
+    padding:2rem 1.2rem;
+}
+
+
+
+/* FOOTER */
+
 .footer{
-    padding:55px 5%;
+    padding-top:5vh;
+    padding-bottom:5vh;
 }
 
 .footer-links{
-    flex-direction:row;
+    display:flex;
+    justify-content:center;
+    align-items:center;
     flex-wrap:wrap;
-    gap:15px;
+    gap:1rem;
 }
+
+
+
+/* GLOBAL TEXT */
 
 .hero-content,
 .section-header,
 .health-content,
 .cta-box{
     margin-top:0;
-}
-
-.about-right{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
 }
 }
