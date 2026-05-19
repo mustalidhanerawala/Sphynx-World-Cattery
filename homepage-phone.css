@@ -9,9 +9,7 @@
 }
 
 .breed-cards,
-.health-grid,
-.stats-section,
-.about-section{
+.stats-section{
     grid-template-columns:1fr;
 }
 
@@ -20,45 +18,66 @@
 }
 
 .about-section{
-    gap:60px;
+    grid-template-columns:1fr 1fr;
+    gap:35px;
+    align-items:start;
+}
+
+.health-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
 }
 }
 
 @media(max-width:768px){
+
 .hero-logo img{
-    width:42%;
-    min-width:120px;
-    max-width:180px;
-    border-radius:22px;
+    width:65%;
+    min-width:180px;
+    max-width:280px;
+    border-radius:26px;
 }
+
 .cursor{
     display:none;
 }
 
 .hero{
-    padding:20px 5%;
+    padding:12px 5%;
+    min-height:auto;
 }
 
-.nav-links,
+.navbar{
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-bottom:10px;
+}
+
+.nav-links{
+    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.nav-links a{
+    font-size:13px;
+}
+
 .nav-btn{
-    display:none;
+    display:block;
+    padding:12px 18px;
+    font-size:13px;
 }
 
 .menu-btn{
-    display:flex;
-    flex-direction:column;
-    gap:6px;
-}
-
-.menu-btn span{
-    width:28px;
-    height:3px;
-    background:white;
-    border-radius:10px;
+    display:none;
 }
 
 .hero-content{
-    margin-top:90px;
+    margin-top:35px;
+    text-align:center;
 }
 
 .hero-content h1,
@@ -66,65 +85,138 @@
 .section-header h2,
 .health-content h2,
 .cta-box h2{
-    font-size:42px;
+    font-size:34px;
+    line-height:1.1;
 }
 
 .hero-content p,
 .about-right p,
 .cta-box p{
-    font-size:15px;
+    font-size:14px;
+    line-height:1.7;
 }
 
 .hero-buttons,
 .cta-buttons{
     flex-direction:column;
+    gap:14px;
+    margin-top:25px;
 }
 
 .premium-btn,
 .glass-btn{
     width:100%;
+    padding:15px 20px;
 }
 
 .stats-section,
 .about-section,
 .breeds-section,
 .health-section,
-.cta-section{
+.cta-section,
+.reviews-section{
     padding-left:5%;
     padding-right:5%;
+}
+
+.stats-section{
+    margin-top:25px;
+    gap:18px;
+}
+
+.about-section{
+    grid-template-columns:1fr 1fr;
+    gap:18px;
+    padding-top:70px;
+    padding-bottom:70px;
+}
+
+.image-grid{
+    grid-template-columns:1fr;
+    gap:14px;
+}
+
+.image-box{
+    min-height:150px;
+}
+
+.large-img{
+    min-height:150px;
+}
+
+.image-box img{
+    object-position:center;
 }
 
 .stat-card,
 .health-card,
 .cta-box{
-    padding:35px 25px;
+    padding:25px 18px;
 }
 
-.image-grid{
-    grid-template-columns:1fr;
-}
-
-.large-img{
-    min-height:280px;
+.stat-card h2{
+    font-size:42px;
 }
 
 .health-grid{
-    margin-top:40px;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+    margin-top:30px;
+}
+
+.health-card{
+    padding:22px 12px;
+    border-radius:20px;
+}
+
+.health-card h3{
+    font-size:14px;
+    line-height:1.4;
+}
+
+.health-icon{
+    width:50px;
+    height:50px;
+    font-size:22px;
+    margin-bottom:15px;
+}
+
+.breed-image{
+    height:240px;
+}
+
+.review-card{
+    width:280px;
+}
+
+.review-image{
+    height:210px;
+}
+
+.review-content{
+    padding:22px;
+}
+
+.footer{
+    padding:55px 5%;
 }
 
 .footer-links{
-    flex-direction:column;
+    flex-direction:row;
+    flex-wrap:wrap;
     gap:15px;
 }
-}
-.breed-image{
-    height:260px;
+
+.hero-content,
+.section-header,
+.health-content,
+.cta-box{
+    margin-top:0;
 }
 
-.image-box{
-    min-height:220px;
+.about-right{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
 }
-
-.image-box img{
-    object-position:center;
 }

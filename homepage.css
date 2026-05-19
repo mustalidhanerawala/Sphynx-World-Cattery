@@ -379,7 +379,7 @@ body::before{
 }
 
 .breed-card:hover .breed-image img{
-    filter:brightness(1.12);
+    filter:brightness(1.1);
 }
 
 .breed-image::after{
@@ -525,13 +525,32 @@ body::before{
 .footer-links{
     display:flex;
     justify-content:center;
-    gap:30px;
+    align-items:center;
+    gap:20px;
     margin-bottom:25px;
 }
 
 .footer-links a{
-    color:white;
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
     text-decoration:none;
+    color:white;
+    background:rgba(255,255,255,0.06);
+    border:1px solid rgba(255,255,255,0.08);
+    backdrop-filter:blur(20px);
+    font-size:20px;
+    transition:0.4s ease;
+}
+
+.footer-links a:hover{
+    background:linear-gradient(135deg,var(--gold),#f0d980);
+    color:black;
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(212,175,55,0.25);
 }
 
 .copyright{
@@ -543,3 +562,80 @@ body::before{
     display:none;
 }
 
+.reviews-section{
+    padding:0 7% 140px;
+    overflow:hidden;
+}
+
+.review-slider{
+    width:100%;
+    overflow:hidden;
+    position:relative;
+    margin-top:60px;
+}
+
+.review-track{
+    display:flex;
+    gap:30px;
+    width:max-content;
+    animation:scrollReviews 35s linear infinite;
+}
+
+.review-card{
+    width:420px;
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:35px;
+    overflow:hidden;
+    backdrop-filter:blur(20px);
+    transition:0.4s;
+    flex-shrink:0;
+}
+
+.review-card:hover{
+    border-color:rgba(212,175,55,0.35);
+    box-shadow:0 0 35px rgba(212,175,55,0.12);
+}
+
+.review-image{
+    height:300px;
+    overflow:hidden;
+}
+
+.review-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.review-content{
+    padding:35px;
+}
+
+.stars{
+    color:var(--gold);
+    font-size:20px;
+    margin-bottom:20px;
+}
+
+.review-content p{
+    color:var(--muted);
+    line-height:1.9;
+    margin-bottom:22px;
+}
+
+.review-content h4{
+    font-weight:600;
+    color:white;
+}
+
+@keyframes scrollReviews{
+    0%{
+        transform:translateX(0);
+    }
+
+    100%{
+        transform:translateX(-50%);
+    }
+}
