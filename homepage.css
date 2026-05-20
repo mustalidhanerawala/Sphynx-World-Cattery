@@ -97,7 +97,10 @@ body::before{
     gap:40px;
     list-style:none;
 }
-
+.navbar a,
+.hero-buttons a{
+    text-decoration:none;
+}
 .nav-links a{
     color:var(--light);
     text-decoration:none;

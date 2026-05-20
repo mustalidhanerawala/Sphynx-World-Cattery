@@ -72,30 +72,49 @@ body{
 .navbar{
     width:100%;
     display:flex;
-    justify-content:center;
+    flex-direction:column;
     align-items:center;
-    flex-wrap:wrap;
-    gap:3vw;
+    justify-content:center;
+    gap:2vh;
     margin-bottom:2vh;
 }
 
+
+
+/* NAV LINKS */
+
 .nav-links{
-    display:flex;
-    justify-content:center;
+    width:100%;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
     align-items:center;
-    flex-wrap:wrap;
-    gap:4vw;
+    justify-items:center;
+    gap:1vw;
 }
 
 .nav-links a{
-    font-size:0.82rem;
+    width:100%;
+    text-align:center;
+    text-decoration:none;
+    font-size:clamp(0.72rem,2.8vw,0.95rem);
+    padding:1.2vh 0;
+    font-weight:600;
 }
 
+
+
+/* RESERVE BUTTON */
+
 .nav-btn{
-    display:block;
-    width:auto;
-    padding:0.8rem 1.2rem;
-    font-size:0.8rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:70%;
+    min-height:5.5vh;
+    padding:1.2vh 2vw;
+    font-size:clamp(0.82rem,3vw,1rem);
+    border-radius:1rem;
+    text-decoration:none;
 }
 
 .menu-btn{
