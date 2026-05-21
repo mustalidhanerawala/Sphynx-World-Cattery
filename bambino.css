@@ -32,7 +32,6 @@ body{
 
 
 
-
 /* BLURRED BACKGROUND IMAGE */
 
 .hero-bg{
@@ -76,6 +75,14 @@ body{
     transition:transform 0.2s linear;
 }
 
+
+.section-tag {
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 0.85rem;
+}
+
 .breed-image-section{
     width:100%;
     margin:auto;
@@ -99,6 +106,7 @@ body{
 
     filter:
     brightness(0.5)
+   
 }
 
 
@@ -133,23 +141,15 @@ body{
 
     backdrop-filter:blur(20px);
 }
-
-.section-tag {
-    color: var(--gold);
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    font-size: 0.85rem;
-}
-
-
-
 .available {
     display: inline-flex;
     width: max-content;
     padding: 1rem 1.5rem;
     border-radius: 5rem;
+
     background: rgba(255, 255, 255, 0.08);
     border: 1px solid rgba(255, 255, 255, 0.08);
+
     backdrop-filter: blur(20px);
 }
 
@@ -208,8 +208,10 @@ body{
     margin-top: 6rem;
     padding: 4rem;
     border-radius: 3rem;
+
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.08);
+
     text-align: center;
 }
 
@@ -222,12 +224,17 @@ body{
     display: inline-flex;
     align-items: center;
     justify-content: center;
+
     padding: 1rem 2.5rem;
+
     border-radius: 1rem;
+
     background: #111;
     border: 1px solid rgba(255, 255, 255, 0.08);
+
     color: white;
     text-decoration: none;
+
     transition: 0.4s;
 }
 

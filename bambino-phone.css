@@ -23,6 +23,9 @@ body{
     padding:4vh 5vw 8vh;
 }
 
+
+
+
 .breed-image-section{
     border-radius:2rem;
 }
@@ -45,15 +48,11 @@ body{
     padding:0.7rem 1rem;
 }
 
-
-.available{
-    padding:0.7rem 1rem;
-    font-size:0.8rem;
-}
 .section-tag{
     font-size:0.7rem;
     letter-spacing:0.12rem;
 }
+
 .breed-content{
     margin-top:4vh;
     gap:3vh;
