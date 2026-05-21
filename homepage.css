@@ -71,6 +71,7 @@ body::before{
     display:flex;
     align-items:center;
     justify-content:space-between;
+    margin: 2vh;
 }
 
 .hero-logo{
@@ -106,6 +107,7 @@ body::before{
     text-decoration:none;
     font-size:15px;
     position:relative;
+    
 }
 
 .nav-links a::after{

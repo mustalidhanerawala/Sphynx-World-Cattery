@@ -99,6 +99,7 @@ body{
     font-size:clamp(0.72rem,2.8vw,0.95rem);
     padding:1.2vh 0;
     font-weight:600;
+    margin-top: 20vh;
 }
 
 
@@ -115,6 +116,7 @@ body{
     font-size:clamp(0.82rem,3vw,1rem);
     border-radius:1rem;
     text-decoration:none;
+    margin: 1.5vh;
 }
 
 .menu-btn{
@@ -134,6 +136,7 @@ body{
     max-width:320px;
     min-width:180px;
     border-radius:1.5rem;
+    margin: 2vh;
 }
 
 
