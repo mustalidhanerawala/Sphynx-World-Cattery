@@ -1,0 +1,196 @@
+:root{
+    --gold:#d4af37;
+    --bg:#070707;
+    --text:#ffffff;
+    --muted:#a9a9a9;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#070707;
+    color:var(--text);
+    font-family:sans-serif;
+    overflow-x:hidden;
+}
+
+.section-tag{
+    color:var(--gold);
+    text-transform:uppercase;
+    letter-spacing:0.2rem;
+    font-size:0.85rem;
+}
+
+
+
+.about-hero{
+    width:100%;
+    min-height:100vh;
+
+    padding:5vw 7vw;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:5rem;
+    align-items:center;
+}
+
+.logo-box{
+    width:100%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.logo-box img{
+    width:100%;
+    max-width:34rem;
+
+    border-radius:3rem;
+
+    transition:0.5s;
+}
+
+.logo-box img:hover{
+    transform:scale(1.03);
+}
+
+.hero-text h1{
+    font-size:5.5rem;
+    line-height:1;
+
+    margin:1.5rem 0 2rem;
+}
+
+.hero-text p{
+    color:var(--muted);
+    line-height:2;
+    font-size:1rem;
+}
+
+
+
+.story-section{
+    width:100%;
+
+    padding:2vw 7vw 8vw;
+
+    display:grid;
+    grid-template-columns:0.9fr 1.1fr;
+    gap:5rem;
+}
+
+.story-left h2{
+    font-size:4rem;
+    line-height:1.1;
+
+    margin-top:1.5rem;
+}
+
+.story-right p{
+    color:var(--muted);
+    line-height:2;
+    margin-bottom:2rem;
+}
+
+
+
+.timeline-section{
+    width:100%;
+
+    padding:0 7vw 8vw;
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:2rem;
+}
+
+.timeline-card{
+    padding:3rem;
+
+    border-radius:2rem;
+
+    background:rgba(255,255,255,0.05);
+
+    border:1px solid rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(20px);
+
+    text-align:center;
+
+    transition:0.4s;
+}
+
+.timeline-card:hover{
+    transform:translateY(-10px);
+}
+
+.timeline-card h3{
+    font-size:4rem;
+    color:var(--gold);
+    margin-bottom:1rem;
+}
+
+.timeline-card p{
+    color:var(--muted);
+}
+
+
+
+.quote-section{
+    width:100%;
+
+    padding:0 7vw 10vw;
+
+    text-align:center;
+}
+
+.quote-section h2{
+    font-size:4rem;
+    line-height:1.2;
+}
+
+
+
+.blur{
+    position:fixed;
+    border-radius:50%;
+    filter:blur(8rem);
+    opacity:0.12;
+    z-index:-1;
+}
+
+.blur-one{
+    width:25rem;
+    height:25rem;
+    background:gold;
+    top:-5rem;
+    left:-5rem;
+}
+
+.blur-two{
+    width:20rem;
+    height:20rem;
+    background:white;
+    right:-5rem;
+    bottom:-5rem;
+}
+
+
+
+.reveal{
+    opacity:0;
+    transform:translateY(80px);
+    transition:1s ease;
+}
+
+.reveal.active{
+    opacity:1;
+    transform:translateY(0);
+}
+
