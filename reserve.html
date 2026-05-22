@@ -2,90 +2,493 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reservation Contract</title>
 
     <link rel="stylesheet" href="reserve.css">
     <link rel="stylesheet" href="reserve-phone.css">
 
-    <title>Reserve Your Kitten</title>
 </head>
 
 <body>
 
-    <div class="bg-blur blur-one"></div>
-    <div class="bg-blur blur-two"></div>
+    <div class="blur blur-one"></div>
+    <div class="blur blur-two"></div>
 
     <section class="reserve-page">
 
-        <div class="reserve-left">
+        <div class="top-download reveal">
 
-            <span class="section-tag">Luxury Reservation</span>
-
-            <h1>Reserve Your Future Companion</h1>
+            <h1>
+                Payment & Reservation
+            </h1>
 
             <p>
-                Every kitten is raised with love, early socialization, and exceptional care.
-                Complete the reservation form and continue directly through WhatsApp.
+                Reserve your kitten securely with our official contract and reservation process.
             </p>
 
-            <div class="reserve-features">
+            <div class="download-actions">
 
-                <div class="feature-card">
-                    <h3>✔ HCM Health Guarantee</h3>
-                </div>
+                <a href="Contract.pdf" download class="premium-btn">
+                    Download PDF Contract
+                </a>
 
-                <div class="feature-card">
-                    <h3>✔ Vet Checked Kittens</h3>
-                </div>
-
-                <div class="feature-card">
-                    <h3>✔ Raised In Loving Home</h3>
-                </div>
-
-                <div class="feature-card">
-                    <h3>✔ Lifetime Breeder Support</h3>
-                </div>
+                <a href="mailto:Sphynxworld@gmail.com" class="glass-btn">
+                    Email Completed Contract
+                </a>
 
             </div>
 
         </div>
 
-        <div class="reserve-right">
 
-            <form id="reserveForm" class="reserve-form">
 
-                <h2>Reservation Form</h2>
+        <div class="content-grid">
 
-                <div class="input-group">
-                    <input type="text" id="name" placeholder="Full Name" required>
+            <div class="left-content reveal">
+
+                <div class="info-card">
+
+                    <h2>Accepted Payment Methods</h2>
+
+                    <ul>
+
+                        <li>✔ Major Credit Cards</li>
+                        <li>✔ Zelle</li>
+                        <li>✔ Cash</li>
+                        <li>✔ Other approved payment methods</li>
+
+                    </ul>
+
                 </div>
 
-                <div class="input-group">
-                    <input type="email" id="email" placeholder="Email Address" required>
+
+
+                <div class="info-card">
+
+                    <h2>Reservation Process</h2>
+
+                    <ol>
+
+                        <li>Complete the reservation contract</li>
+                        <li>Review and sign the agreement</li>
+                        <li>Submit the $500 reservation deposit</li>
+                        <li>Receive confirmation of reservation</li>
+
+                    </ol>
+
                 </div>
 
-                <div class="input-group">
-                    <input type="tel" id="phone" placeholder="Phone Number" required>
+
+
+                <div class="info-card">
+
+                    <h2>Important Information</h2>
+
+                    <p>
+                        Reservation deposits are non-refundable unless otherwise stated in the contract.
+                    </p>
+
+                    <p>
+                        Final payment must be completed before pickup or delivery arrangements.
+                    </p>
+
+                    <p>
+                        We reserve the right to refuse placement if necessary for the kitten’s wellbeing.
+                    </p>
+
                 </div>
 
-                <div class="input-group">
-                    <select id="breed">
-                        <option>Sphynx</option>
-                        <option>Elf</option>
-                        <option>Bambino</option>
-                    </select>
+            </div>
+
+
+
+            <div class="contract-section reveal">
+
+                <div class="contract-header">
+
+                    <span class="section-tag">
+                        Official Contract
+                    </span>
+
+                    <h2>
+                        SPHYNX WORLD Luxury Kitten / Cat Purchase Agreement
+                    </h2>
+
                 </div>
 
-                <div class="input-group">
-                    <textarea id="message" placeholder="Tell us about your future kitten..." rows="5"></textarea>
-                </div>
+                <form action="https://formsubmit.co/Sphynxworld@gmail.com" method="POST" class="contract-form">
 
-                <button type="submit" class="reserve-btn">
-                    Continue To WhatsApp
-                </button>
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_subject" value="New Kitten Reservation Contract">
+                    <input type="hidden" name="_template" value="table">
 
-            </form>
+
+
+                    <!-- 1 -->
+
+                    <div class="form-section">
+
+                        <h3>1. Description of Kitten or Cat</h3>
+
+                        <div class="form-grid">
+
+                            <input type="text" name="Breed" placeholder="Breed">
+                            <input type="text" name="Color" placeholder="Color">
+
+                            <select name="Sex">
+
+                                <option value="">Sex</option>
+
+                                <option>Male</option>
+                                <option>Female</option>
+
+                            </select>
+
+                            <input type="date" name="Date of Birth">
+                            <input type="date" name="Date of Sale">
+
+                            <input type="text" name="Purchase Amount" placeholder="Purchase Amount">
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- 2 -->
+
+                    <div class="form-section">
+
+                        <h3>2. Personal Information</h3>
+
+                        <div class="form-grid">
+
+                            <input type="text" name="Purchaser Name" placeholder="Purchaser Name">
+
+                            <input type="tel" name="Purchaser Phone" placeholder="Purchaser Phone">
+
+                            <input type="text" name="Purchaser Address" placeholder="Purchaser Address">
+
+                            <input type="email" name="Purchaser Email" placeholder="Purchaser Email">
+
+                            <input type="text" name="Seller Name" placeholder="Seller Name">
+
+                            <input type="tel" name="Seller Phone" placeholder="Seller Phone">
+
+                            <input type="text" name="Seller Address" placeholder="Seller Address">
+
+                            <input type="email" name="Seller Email" placeholder="Seller Email">
+
+                            <input type="text" name="Purchaser Initials Personal Info" placeholder="Purchaser Initials">
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- 3 -->
+
+                    <div class="form-section">
+
+                        <h3>3. Purchase Price Guide</h3>
+
+                        <textarea rows="5" readonly>
+Pet price ranges:
+Sphynx $2,500-$3,000
+Elf $2,600-$3,200
+Bambino $3,500-$4,000
+Breeding rights +$2,000 when approved.
+        </textarea>
+
+                    </div>
+
+
+
+                    <!-- 4 -->
+
+                    <div class="form-section">
+
+                        <h3>4. Deposit and Reservation</h3>
+
+                        <textarea rows="4" readonly>
+A non-refundable $500 deposit is required to reserve a kitten and is applied toward the purchase price.
+        </textarea>
+
+                        <input type="text" name="Deposit Reservation Initials" placeholder="Purchaser Initials">
+
+                    </div>
+
+
+
+                    <!-- 5 -->
+
+                    <div class="form-section">
+
+                        <h3>5. Method of Payment</h3>
+
+                        <div class="checkbox-group">
+
+                            <label>
+                                <input type="checkbox" name="Payment Method" value="Cash">
+                                Cash
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="Payment Method" value="Credit Card">
+                                Credit Card
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="Payment Method" value="Zelle">
+                                Zelle
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="Payment Method" value="PayPal">
+                                PayPal
+                            </label>
+
+                        </div>
+
+                        <input type="text" name="Payment Method Initials" placeholder="Purchaser Initials">
+
+                    </div>
+
+
+
+                    <!-- 6 -->
+
+                    <div class="form-section">
+
+                        <h3>6. Health Guarantee</h3>
+
+                        <textarea rows="7" readonly>
+Seller guarantees the kitten/cat to be in good health at the time of transfer and provides a one-year HCM/genetic health guarantee.
+        </textarea>
+
+                        <input type="text" name="Health Guarantee Initials" placeholder="Purchaser Initials">
+
+                    </div>
+
+
+
+                    <!-- 7 -->
+
+                    <div class="form-section">
+
+                        <h3>7. Spay / Neuter and Breeding Rights</h3>
+
+                        <textarea rows="5" readonly>
+Unless breeding rights are granted in writing, the kitten/cat is sold as a pet only.
+        </textarea>
+
+                        <input type="text" name="Breeding Rights Initials" placeholder="Purchaser Initials">
+
+                    </div>
+
+
+
+                    <!-- 8 -->
+
+                    <div class="form-section">
+
+                        <h3>8. Treatment and Care of Cat</h3>
+
+                        <textarea rows="8" readonly>
+Declawing is prohibited. Kitten must remain indoors and receive proper food, hygiene, warmth, and care.
+        </textarea>
+
+                        <div class="form-grid">
+
+                            <input type="text" name="Declaw Initials" placeholder="Declaw Agreement Initials">
+
+                            <input type="text" name="Indoor Initials" placeholder="Indoor Agreement Initials">
+
+                            <input type="text" name="Care Initials" placeholder="Care Agreement Initials">
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- 9 -->
+
+                    <div class="form-section">
+
+                        <h3>9. Breed Considerations</h3>
+
+                        <textarea rows="8" readonly>
+Hairlessness may vary due to hormones, age, genetics, and climate. Hairless breeds require regular skin and ear care.
+        </textarea>
+
+                        <input type="text" name="Breed Considerations Initials" placeholder="Purchaser Initials">
+
+                    </div>
+
+
+
+                    <!-- 10 -->
+
+                    <div class="form-section">
+
+                        <h3>10. Relinquishment / Return to Seller</h3>
+
+                        <textarea rows="6" readonly>
+Purchaser agrees to contact Seller first if unable to keep the kitten/cat.
+        </textarea>
+
+                        <input type="text" name="Return Policy Initials" placeholder="Purchaser Initials">
+
+                    </div>
+
+
+
+                    <!-- 11 -->
+
+                    <div class="form-section">
+
+                        <h3>11. Breach of Contract</h3>
+
+                        <textarea rows="5" readonly>
+Violation of this agreement may require surrender of the kitten/cat with no refund.
+        </textarea>
+
+                        <input type="text" name="Breach Initials" placeholder="Purchaser Initials">
+
+                    </div>
+
+
+
+                    <!-- 12 -->
+
+                    <div class="form-section">
+
+                        <h3>12. Legal Terms</h3>
+
+                        <div class="form-grid">
+
+                            <input type="text" name="Governing State" placeholder="Governing State / Jurisdiction">
+
+                            <input type="text" name="Legal Terms Initials" placeholder="Purchaser Initials">
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- 13 -->
+
+                    <div class="form-section">
+
+                        <h3>13. Acceptance of Contract</h3>
+
+                        <div class="form-grid">
+
+                            <input type="text" name="Purchaser Name Acceptance" placeholder="Purchaser Name">
+
+                            <input type="text" name="Purchaser Signature Acceptance" placeholder="Purchaser Signature">
+
+                            <input type="date" name="Purchaser Acceptance Date">
+
+                            <input type="text" name="Seller Name Acceptance" placeholder="Seller Name">
+
+                            <input type="text" name="Seller Signature Acceptance" placeholder="Seller Signature">
+
+                            <input type="date" name="Seller Acceptance Date">
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- 14 -->
+
+                    <div class="form-section">
+
+                        <h3>14. Transfer of Ownership and Receipt of Sale</h3>
+
+                        <div class="form-grid">
+
+                            <input type="text" name="Transfer Purchaser Name" placeholder="Purchaser Name">
+
+                            <input type="text" name="Transfer Purchaser Signature" placeholder="Purchaser Signature">
+
+                            <input type="date" name="Transfer Purchaser Date">
+
+                            <input type="text" name="Transfer Seller Name" placeholder="Seller Name">
+
+                            <input type="text" name="Transfer Seller Signature" placeholder="Seller Signature">
+
+                            <input type="date" name="Transfer Seller Date">
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- 15 -->
+
+                    <div class="form-section">
+
+                        <h3>15. Final Payment Confirmation</h3>
+
+                        <div class="form-grid">
+
+                            <input type="text" name="Final Amount Paid" placeholder="Final Amount Paid">
+
+                            <input type="text" name="Final Payment Method" placeholder="Payment Method">
+
+                            <input type="text" name="Balance Remaining" placeholder="Balance Remaining">
+
+                        </div>
+
+                    </div>
+
+
+
+                    <button type="submit" class="submit-btn">
+                        Submit Reservation Contract
+                    </button>
+
+                </form>
+
+
+            </div>
+
+        </div>
+
+
+
+        <div class="bottom-download reveal">
+
+            <h2>
+                Prefer Manual Submission?
+            </h2>
+
+            <p>
+                Download the PDF contract, complete it manually, then scan and email it to:
+            </p>
+
+            <a href="mailto:Sphynxworld@gmail.com" class="email-link">
+                Sphynxworld@gmail.com
+            </a>
+
+            <div class="download-actions">
+
+                <a href="contract.pdf" download class="premium-btn">
+                    Download PDF Contract
+                </a>
+
+            </div>
 
         </div>
 

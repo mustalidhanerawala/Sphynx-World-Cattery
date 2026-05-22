@@ -1,0 +1,222 @@
+:root{
+    --gold:#d4af37;
+    --bg:#070707;
+    --text:#ffffff;
+    --muted:#a9a9a9;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#070707;
+    color:var(--text);
+    font-family:sans-serif;
+    overflow-x:hidden;
+}
+
+
+
+/* PAGE */
+
+.available-page{
+    width:100%;
+    padding:5vw 7vw 8vw;
+    position:relative;
+}
+
+
+
+/* HERO */
+
+.hero-section{
+    width:100%;
+    min-height:70vh;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    gap:2rem;
+}
+
+.section-tag{
+    color:var(--gold);
+    text-transform:uppercase;
+    letter-spacing:0.2rem;
+    font-size:0.85rem;
+}
+
+.hero-section h1{
+    font-size:7rem;
+    line-height:0.95;
+}
+
+.hero-text{
+    width:min(42rem,100%);
+    color:var(--muted);
+    line-height:2;
+    font-size:1.05rem;
+}
+
+
+
+/* CONTENT */
+
+.content-section{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    gap:4rem;
+}
+
+.text-block h2,
+.glass-card h2,
+.transport-section h2{
+    font-size:3rem;
+    margin-bottom:2rem;
+}
+
+.text-block p,
+.glass-card p,
+.transport-section p{
+    color:var(--muted);
+    line-height:2;
+    margin-bottom:1.5rem;
+}
+
+
+
+/* GLASS CARDS */
+
+.glass-card{
+    background:rgba(255,255,255,0.05);
+
+    border:1px solid rgba(255,255,255,0.08);
+
+    border-radius:2rem;
+
+    padding:3rem;
+
+    backdrop-filter:blur(20px);
+
+    transition:0.4s;
+}
+
+.glass-card:hover{
+    transform:translateY(-8px);
+}
+
+.glass-card ul{
+    list-style:none;
+}
+
+.glass-card li{
+    color:var(--muted);
+    margin-bottom:1rem;
+    line-height:1.8;
+}
+
+
+
+/* SPLIT */
+
+.split-section{
+    width:100%;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+
+    gap:2rem;
+}
+
+
+
+/* TRANSPORT */
+
+.transport-section{
+    padding:4rem 0;
+}
+
+.contact-btn{
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+
+    margin-top:1rem;
+
+    padding:1rem 2.5rem;
+
+    border-radius:1rem;
+
+    background:#111;
+
+    border:1px solid rgba(255,255,255,0.08);
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:0.4s;
+}
+
+.contact-btn:hover{
+    background:linear-gradient(
+    135deg,
+    var(--gold),
+    #f0d980
+    );
+
+    color:black;
+}
+
+
+
+/* BLURS */
+
+.blur{
+    position:fixed;
+    border-radius:50%;
+    filter:blur(8rem);
+    opacity:0.12;
+    z-index:-1;
+}
+
+.blur-one{
+    width:25rem;
+    height:25rem;
+    background:gold;
+    top:-5rem;
+    left:-5rem;
+}
+
+.blur-two{
+    width:20rem;
+    height:20rem;
+    background:white;
+    right:-5rem;
+    bottom:-5rem;
+}
+
+
+
+/* ANIMATIONS */
+
+.reveal{
+    opacity:0;
+    transform:translateY(80px);
+    transition:1s ease;
+}
+
+.reveal.active{
+    opacity:1;
+    transform:translateY(0);
+}

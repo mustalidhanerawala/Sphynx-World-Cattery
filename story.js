@@ -15,3 +15,19 @@ window.addEventListener('scroll',()=>{
     });
 
 });
+
+
+
+window.addEventListener("scroll",()=>{
+
+    const image=document.querySelector(".story-image-section img");
+
+    let value=window.scrollY*0.00015;
+
+    image.style.transform=`scale(${1 + value})`;
+
+    image.style.filter=`
+    brightness(${0.92 + value * 0.35})
+    `;
+
+});

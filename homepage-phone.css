@@ -66,38 +66,72 @@ body{
 }
 .navbar{
     width:100%;
+
     display:flex;
     flex-direction:column;
+
     align-items:center;
     justify-content:center;
-    gap:1vh;
-    margin-bottom:1vh;
+
+    gap:1rem;
+
+    margin-bottom:1.5rem;
 }
 
 
-
-/* NAV LINKS */
 
 .nav-links{
     width:100%;
+
+    margin:0;
+    padding:0;
+
+    list-style:none;
+
     display:grid;
-    grid-template-columns:repeat(4,1fr);
+
+    grid-template-columns:repeat(5,1fr);
+
     align-items:center;
-    justify-items:center;
-    gap:1vw;
+
+    gap:0.35rem;
 }
+
+
+
+.nav-links li{
+    width:100%;
+
+    display:flex;
+    justify-content:center;
+}
+
+
 
 .nav-links a{
     width:100%;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
     text-align:center;
-    text-decoration:none;
-    font-size:clamp(0.72rem,2.7vw,0.9rem);
-    padding:0.8vh 0;
-    font-weight:600;
+
+    padding:0.75rem 0.2rem;
+
+    font-size:0.72rem;
+
+    line-height:1.15;
+
+    border-radius:1rem;
 }
 
 
 
+.nav-btn{
+    margin-top:0.3rem;
+}
 /* RESERVE BUTTON */
 
 .premium-btn.nav-btn{
