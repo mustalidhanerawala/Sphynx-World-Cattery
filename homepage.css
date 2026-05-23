@@ -66,63 +66,152 @@ body::before{
     50%{transform:translateY(40px);}
 }
 
+/* NAVBAR */
+
 .navbar{
     width:100%;
+
     display:flex;
+    flex-direction:column;
+
     align-items:center;
-    justify-content:space-between;
-    margin: 2vh;
+    justify-content:center;
+
+    gap:2rem;
+
+    padding-top:2rem;
+
+    position:relative;
+
+    z-index:10;
 }
+
+
+
+/* HEADING */
+
+.nav-heading{
+    text-align:center;
+}
+
+.nav-heading h2{
+    font-size:1.8rem;
+
+    letter-spacing:0.45rem;
+
+    font-weight:300;
+
+    color:var(--gold);
+
+    margin-bottom:0.7rem;
+}
+
+.nav-heading p{
+    color:rgba(255,255,255,0.72);
+
+    letter-spacing:0.15rem;
+
+    text-transform:uppercase;
+
+    font-size:0.8rem;
+}
+
+
+
+/* LOGO */
 
 .hero-logo{
     width:100%;
+
     display:flex;
     justify-content:center;
-    align-items:center;
-    margin:25px auto 10px;
-    position:relative;
-    z-index:5;
 }
 
 .hero-logo img{
-    width: 400px;
-    height:auto;
-    object-fit:contain;
+    width:20rem;
+
+    max-width:70vw;
+
+    border-radius:2rem;
+
     display:block;
-    border-radius:28px;
-    padding:10px;
-}
 
-.nav-links{
-    display:flex;
-    gap:40px;
-    list-style:none;
-}
-.navbar a,
-.hero-buttons a{
-    text-decoration:none;
-}
-.nav-links a{
-    color:var(--light);
-    text-decoration:none;
-    font-size:15px;
-    position:relative;
-    
-}
-
-.nav-links a::after{
-    content:'';
-    position:absolute;
-    left:0;
-    bottom:-6px;
-    width:0%;
-    height:2px;
-    background:var(--gold);
     transition:0.4s;
 }
 
-.nav-links a:hover::after{
+.hero-logo img:hover{
+    transform:scale(1.03);
+}
+
+
+
+/* NAV LINKS */
+
+.nav-links{
+    width:min(55rem,90%);
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    gap:1rem;
+
+    list-style:none;
+}
+
+.nav-links li{
     width:100%;
+}
+
+.nav-links a{
+    width:100%;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    text-decoration:none;
+
+    padding:1rem 1.2rem;
+
+    border-radius:1rem;
+
+    background:rgba(255,255,255,0.04);
+
+    border:1px solid rgba(255,255,255,0.08);
+
+    color:white;
+
+    transition:0.4s;
+}
+
+.nav-links a:hover{
+    background:linear-gradient(
+    135deg,
+    var(--gold),
+    #f0d980
+    );
+
+    color:black;
+
+    transform:translateY(-3px);
+}
+
+
+
+/* RESERVE BUTTON */
+
+.nav-btn{
+    padding:1rem 2.5rem;
+}
+
+
+
+/* REMOVE OLD MOBILE MENU */
+
+.menu-btn{
+    display:none;
 }
 .reserve-link{
     display:flex;
@@ -181,6 +270,7 @@ body::before{
     transition:0.4s;
     position:relative;
     overflow:hidden;
+    text-decoration:none;
 }
 
 .premium-btn{
@@ -191,6 +281,7 @@ body::before{
     font-weight:700;
     border:1px solid rgba(255,255,255,0.12);
     backdrop-filter:blur(20px);
+    text-decoration:none;
 }
 
 .premium-btn:hover{

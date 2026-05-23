@@ -64,6 +64,8 @@ body{
 .cursor{
     display:none;
 }
+/* MOBILE NAVBAR */
+
 .navbar{
     width:100%;
 
@@ -71,86 +73,121 @@ body{
     flex-direction:column;
 
     align-items:center;
-    justify-content:center;
 
-    gap:1rem;
+    gap:1.5rem;
 
-    margin-bottom:1.5rem;
+    padding-top:2vh;
 }
 
 
 
-.nav-links{
+/* HEADING */
+
+.nav-heading{
     width:100%;
+    text-align:center;
+}
 
-    margin:0;
-    padding:0;
+.nav-heading h2{
+    font-size:clamp(1.1rem,5vw,1.5rem);
 
-    list-style:none;
+    letter-spacing:0.25rem;
 
-    display:grid;
+    line-height:1.3;
+}
 
-    grid-template-columns:repeat(5,1fr);
+.nav-heading p{
+    font-size:0.7rem;
 
-    align-items:center;
+    letter-spacing:0.12rem;
 
-    gap:0.35rem;
+    line-height:1.6;
 }
 
 
 
-.nav-links li{
+/* LOGO */
+
+.hero-logo{
     width:100%;
 
     display:flex;
     justify-content:center;
 }
 
+.hero-logo img{
+    width:52vw;
 
+    min-width:180px;
+
+    max-width:280px;
+
+    border-radius:1.5rem;
+}
+
+
+
+/* NAV BUTTONS */
+
+.nav-links{
+    width:100%;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:0.8rem;
+
+    list-style:none;
+}
+
+.nav-links li:last-child{
+    grid-column:1/3;
+}
 
 .nav-links a{
     width:100%;
 
     display:flex;
 
-    align-items:center;
     justify-content:center;
+    align-items:center;
 
     text-align:center;
 
-    padding:0.75rem 0.2rem;
+    text-decoration:none;
 
-    font-size:0.72rem;
-
-    line-height:1.15;
+    padding:0.9rem 0.5rem;
 
     border-radius:1rem;
+
+    font-size:0.8rem;
+
+    background:rgba(255,255,255,0.04);
+
+    border:1px solid rgba(255,255,255,0.08);
 }
 
 
 
-.nav-btn{
-    margin-top:0.3rem;
-}
 /* RESERVE BUTTON */
 
-.premium-btn.nav-btn{
-    width:48%;
-    padding:0.75rem 1rem;
+.nav-btn{
+    width:100%;
+font-size: 0.8rem;
+    padding:1rem;
+    margin-bottom: 2.5vh;
+}
+.hero-badge{
+    font-size:0.72rem;
 
-    margin-top:2.5vh;
+    padding:0.7rem 1rem;
 
-    font-size:clamp(0.72rem,2.5vw,0.88rem);
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    text-decoration:none;
-    border-radius:1rem;
+    letter-spacing:0.08rem;
 }
 
 
+/* REMOVE HAMBURGER */
 
 .menu-btn{
     display:none;
@@ -182,12 +219,11 @@ body{
     margin-top:2vh;
     text-align:center;
     width:100%;
-}
-
-.hero-content h1{
     font-size:clamp(2.2rem,9vw,3.5rem);
     line-height:1;
 }
+
+
 
 .hero-content p{
     font-size:0.95rem;
@@ -207,6 +243,8 @@ body{
 .glass-btn{
     width:100%;
     padding:1rem;
+    text-decoration:none;
+    font-size: 1rem;
 }
 
 
