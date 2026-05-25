@@ -1,17 +1,17 @@
-const reveals=document.querySelectorAll('.reveal');
+const cards = document.querySelectorAll('.kitten-card');
 
-window.addEventListener('scroll',()=>{
+cards.forEach((card,index)=>{
 
-    reveals.forEach(reveal=>{
+    card.style.opacity='0';
+    card.style.transform='translateY(60px)';
 
-        const top=reveal.getBoundingClientRect().top;
+    setTimeout(()=>{
 
-        const windowHeight=window.innerHeight;
+        card.style.transition='0.8s';
+        card.style.opacity='1';
+        card.style.transform='translateY(0)';
 
-        if(top<windowHeight-100){
-            reveal.classList.add('active');
-        }
-
-    });
+    },index*180);
 
 });
+
