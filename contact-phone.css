@@ -138,3 +138,51 @@ body{
     opacity:0.08;
 }
 }
+.page-header{
+
+    width:100%;
+
+    margin:0 auto 4vh auto;
+
+    padding-top:2vh;
+
+    text-align:center;
+}
+
+.header-text{
+
+    width:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+}
+
+.header-text h1{
+
+    width:100%;
+
+    font-size:2.4rem;
+
+    line-height:1.1;
+
+    text-align:center;
+}
+
+.header-text p{
+
+    width:100%;
+
+    text-align:center;
+
+    font-size:0.72rem;
+
+    letter-spacing:0.12rem;
+
+    line-height:1.6;
+
+    padding:0 5vw;
+}

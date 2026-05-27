@@ -102,3 +102,35 @@ body{
     padding:1rem;
 }
 }
+.page-header{
+
+    margin-top:4vh;
+    margin-bottom:2vh;
+}
+
+.header-logo img{
+
+    width:28vw;
+
+    max-width:140px;
+
+    border-radius:1.5rem;
+}
+
+.header-text h1{
+
+    font-size:2.2rem;
+
+    line-height:1.1;
+}
+
+.header-text p{
+
+    font-size:0.72rem;
+
+    letter-spacing:0.12rem;
+
+    line-height:1.6;
+
+    padding:0 4vw;
+}
