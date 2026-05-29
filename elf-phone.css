@@ -116,35 +116,33 @@ body{
     padding:1rem;
 }
 }
-.page-header{
+@media(max-width:768px){
 
-    margin-bottom:2vh;
-    margin-top: 4vh;
+.top-header{
+
+    padding:1rem 1.2rem;
 }
 
-.header-logo img{
-
-    width:28vw;
-
-    max-width:140px;
-
-    border-radius:1.5rem;
-}
-
-.header-text h1{
-
-    font-size:2.2rem;
-
-    line-height:1.1;
-}
-
-.header-text p{
+.brand-title{
 
     font-size:0.72rem;
 
-    letter-spacing:0.12rem;
+    letter-spacing:0.18rem;
 
-    line-height:1.6;
+    line-height:1.5;
+}
 
-    padding:0 4vw;
+.hamburger{
+
+    width:2.8rem;
+    height:2.8rem;
+}
+
+.mobile-nav{
+
+    width:75vw;
+
+    top:5rem;
+}
+
 }
