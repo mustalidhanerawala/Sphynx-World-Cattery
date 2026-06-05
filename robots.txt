@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sphynxworldcattery.com/sitemap.xml
