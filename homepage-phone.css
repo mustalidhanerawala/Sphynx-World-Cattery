@@ -84,8 +84,8 @@ body{
 /* HEADING */
 
 .nav-heading{
-    width:100%;
-    text-align:center;
+    flex:9;
+    text-align:left;
 }
 
 .nav-heading h2{
@@ -128,17 +128,41 @@ body{
 
 
 /* NAV BUTTONS */
+.nav-top{
+    width:100%;
 
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    gap:1rem;
+}
 .nav-links{
     width:100%;
 
-    display:grid;
+    display:none;
 
-    grid-template-columns:repeat(2,1fr);
+    flex-direction:column;
 
     gap:0.8rem;
 
     list-style:none;
+
+    margin-top:1rem;
+}
+.nav-links.active{
+    display:flex;
+}
+.menu-btn.active span:nth-child(1){
+    transform:rotate(45deg) translate(6px,6px);
+}
+
+.menu-btn.active span:nth-child(2){
+    opacity:0;
+}
+
+.menu-btn.active span:nth-child(3){
+    transform:rotate(-45deg) translate(7px,-7px);
 }
 
 .nav-links li:last-child{
@@ -185,12 +209,30 @@ font-size: 0.8rem;
 
     letter-spacing:0.08rem;
 }
-
-
-/* REMOVE HAMBURGER */
-
 .menu-btn{
-    display:none;
+    flex:1;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    gap:6px;
+
+    background:none;
+    border:none;
+
+    cursor:pointer;
+}
+
+.menu-btn span{
+    width:28px;
+    height:3px;
+
+    background:white;
+    border-radius:20px;
+
+    transition:0.4s;
 }
 /* LOGO */
 .hero-logo{
@@ -437,4 +479,82 @@ font-size: 0.8rem;
 .cta-box{
     margin-top:0;
 }
+}
+
+/* ==========================================
+   KNOWLEDGE SECTION
+========================================== */
+
+.knowledge-section{
+    padding-top:6vh;
+    padding-bottom:6vh;
+}
+
+.knowledge-grid{
+    display:grid;
+
+    grid-template-columns:1fr;
+
+    gap:1.5rem;
+
+    margin-top:3vh;
+}
+
+.knowledge-card{
+    padding:1.5rem;
+}
+
+.knowledge-card h3{
+    font-size:1.25rem;
+
+    line-height:1.4;
+}
+
+.knowledge-card p{
+    font-size:0.92rem;
+
+    line-height:1.8;
+}
+
+.knowledge-card a{
+    font-size:0.9rem;
+}
+
+
+
+/* ==========================================
+   FAQ SECTION
+========================================== */
+
+.faq-section{
+    padding-top:6vh;
+    padding-bottom:6vh;
+}
+
+.faq-section h2{
+    font-size:clamp(2rem,7vw,3rem);
+
+    line-height:1.1;
+
+    margin-bottom:3vh;
+}
+
+.faq-item{
+    padding:1.3rem;
+
+    margin-bottom:1rem;
+}
+
+.faq-item h3{
+    font-size:1.05rem;
+
+    line-height:1.4;
+
+    margin-bottom:0.8rem;
+}
+
+.faq-item p{
+    font-size:0.92rem;
+
+    line-height:1.8;
 }

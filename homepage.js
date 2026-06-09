@@ -37,3 +37,24 @@ buttons.forEach((button) => {
     });
 });
 
+const menuBtn = document.getElementById('menuBtn');
+const navLinks = document.getElementById('navLinks');
+
+menuBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    menuBtn.classList.toggle('active');
+});
+
+const faqQuestions = document.querySelectorAll('.faq-question');
+
+faqQuestions.forEach(question => {
+
+    question.addEventListener('click', () => {
+
+        const faqItem = question.parentElement;
+
+        faqItem.classList.toggle('active');
+
+    });
+
+});
