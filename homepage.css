@@ -131,7 +131,7 @@ body::before{
     width:20rem;
 
     max-width:70vw;
-
+ height:auto;
     border-radius:2rem;
 
     display:block;
@@ -909,4 +909,9 @@ body::before{
 
 .faq-item.active .faq-question span{
     transform:rotate(45deg);
+}
+.footer-links svg {
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
 }
