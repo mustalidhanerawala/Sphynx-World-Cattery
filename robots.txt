@@ -1,4 +1,7 @@
 User-agent: *
+
+# Allow all pages
 Allow: /
 
+# Sitemap location
 Sitemap: https://sphynxworldcattery.com/sitemap.xml
