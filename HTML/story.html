@@ -2,15 +2,52 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Primary SEO -->
+    <title>Our Story | Sphynx World Cattery</title>
+    <meta name="description" content="Read the story behind Sphynx World Cattery in New York. Learn about our passion, commitment, and how we responsibly raise our Sphynx, Elf, and Bambino kittens.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://sphynxworldcattery.com/HTML/story.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Our Story | Sphynx World Cattery">
+    <meta property="og:description" content="Learn about our journey, values, and how we raise our kittens as beloved family companions.">
+    <meta property="og:url" content="https://sphynxworldcattery.com/HTML/story.html">
+    <meta property="og:image" content="https://sphynxworldcattery.com/Images/SC1.webp">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Our Story | Sphynx World Cattery">
+    <meta name="twitter:description" content="Learn about our journey, values, and how we raise our kittens as beloved family companions.">
+    <meta name="twitter:image" content="https://sphynxworldcattery.com/Images/SC1.webp">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="../CSS/story.css">
     <link rel="stylesheet" href="../CSS/story-phone.css">
 
-    <title>Our Story</title>
-
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://sphynxworldcattery.com/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Our Story",
+        "item": "https://sphynxworldcattery.com/HTML/story.html"
+      }]
+    }
+    </script>
 </head>
 
 <body>
@@ -20,7 +57,7 @@
         SPHYNX WORLD CATTERY
     </div>
 
-    <button class="hamburger" id="hamburger">
+    <button class="hamburger" id="hamburger" aria-label="Open navigation menu">
 
         <span></span>
         <span></span>
@@ -39,15 +76,14 @@
     <a href="contact.html">Contact</a>
 
 </nav>
+    <main>
     <div class="blur blur-one"></div>
     <div class="blur blur-two"></div>
 
     <section class="story-page">
 
         <div class="story-image-section reveal">
-
-            <img src="../Images/L4.jpeg" alt="Our Story">
-
+            <img src="../Images/L4.webp" alt="Our Story - Sphynx World Cattery" width="1290" height="913" loading="eager">
         </div>
 
 
@@ -119,6 +155,7 @@
         </div>
 
     </section>
+    </main>
 
     <script src="../JavaScript/story.js"></script>
 

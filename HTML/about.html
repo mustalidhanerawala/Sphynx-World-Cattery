@@ -3,15 +3,52 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Primary SEO -->
+    <title>About Us | Sphynx World Cattery</title>
+    <meta name="description" content="Learn about Sphynx World Cattery, a trusted hairless cat breeder in New York. With over 25 years of experience raising healthy, socialized Sphynx, Elf, and Bambino kittens.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://sphynxworldcattery.com/HTML/about.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="About Us | Sphynx World Cattery">
+    <meta property="og:description" content="With over 25 years of experience, we responsibly raise exceptional Sphynx, Elf, and Bambino kittens with a focus on health and temperament.">
+    <meta property="og:url" content="https://sphynxworldcattery.com/HTML/about.html">
+    <meta property="og:image" content="https://sphynxworldcattery.com/Images/SC1.webp">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="About Us | Sphynx World Cattery">
+    <meta name="twitter:description" content="With over 25 years of experience, we responsibly raise exceptional Sphynx, Elf, and Bambino kittens.">
+    <meta name="twitter:image" content="https://sphynxworldcattery.com/Images/SC1.webp">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="../CSS/about.css">
     <link rel="stylesheet" href="../CSS/about-phone.css">
 
-    <title>About Us</title>
-
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://sphynxworldcattery.com/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "About",
+        "item": "https://sphynxworldcattery.com/HTML/about.html"
+      }]
+    }
+    </script>
 </head>
 
 <body>
@@ -21,7 +58,7 @@
         SPHYNX WORLD CATTERY
     </div>
 
-    <button class="hamburger" id="hamburger">
+    <button class="hamburger" id="hamburger" aria-label="Open navigation menu">
 
         <span></span>
         <span></span>
@@ -40,6 +77,7 @@
     <a href="contact.html">Contact</a>
 
 </nav>
+    <main>
     <div class="blur blur-one"></div>
     <div class="blur blur-two"></div>
 
@@ -48,7 +86,7 @@
     <section class="about-hero">
 
         <div class="logo-box">
-            <img src="../Images/Logo.webp" alt="Company Logo">
+            <img src="../Images/Logo.webp" alt="Sphynx World Cattery Logo" width="586" height="426" loading="eager">
         </div>
 
 
@@ -134,7 +172,7 @@
 
     </section>
 
-
+    </main>
 
     <script src="../JavaScript/about.js"></script>
 

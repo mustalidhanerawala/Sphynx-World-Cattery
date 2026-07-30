@@ -4,10 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Available Kittens | Sphynx World Cattery</title>
 
+    <!-- Primary SEO -->
+    <title>Available Kittens | Sphynx World Cattery</title>
+    <meta name="description" content="Check out our available Sphynx, Bambino, and Elf kittens for sale in New York. All kittens are raised with care in our home, health guaranteed, and vet-checked.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://sphynxworldcattery.com/HTML/available.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Available Kittens | Sphynx World Cattery">
+    <meta property="og:description" content="Meet our beautiful and socialized Sphynx, Bambino, and Elf kittens available for reservation in New York.">
+    <meta property="og:url" content="https://sphynxworldcattery.com/HTML/available.html">
+    <meta property="og:image" content="https://sphynxworldcattery.com/Images/SC1.webp">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Available Kittens | Sphynx World Cattery">
+    <meta name="twitter:description" content="Meet our beautiful and socialized Sphynx, Bambino, and Elf kittens available for reservation in New York.">
+    <meta name="twitter:image" content="https://sphynxworldcattery.com/Images/SC1.webp">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="../CSS/available.css">
     <link rel="stylesheet" href="../CSS/available-phone.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://sphynxworldcattery.com/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Available",
+        "item": "https://sphynxworldcattery.com/HTML/available.html"
+      }]
+    }
+    </script>
 </head>
 <body>
 <header class="top-header">
@@ -16,7 +56,7 @@
         SPHYNX WORLD CATTERY
     </div>
 
-    <button class="hamburger" id="hamburger">
+    <button class="hamburger" id="hamburger" aria-label="Open navigation menu">
 
         <span></span>
         <span></span>
@@ -35,6 +75,7 @@
     <a href="contact.html">Contact</a>
 
 </nav>
+<main>
 <div class="blur blur-one"></div>
 <div class="blur blur-two"></div>
 
@@ -64,29 +105,29 @@
             <div class="slides">
 
                 <div class="slide active">
-                    <img src="../Images/A1.png" alt="Mia">
+                    <img src="../Images/A1.webp" alt="Mia - Sphynx Kitten" width="1446" height="1088" loading="eager">
                 </div>
 
                 <div class="slide">
-                    <img src="../Images/A2.png" alt="Mini">
+                    <img src="../Images/A2.webp" alt="Mini - Sphynx Kitten" width="1448" height="1086" loading="lazy">
                 </div>
 
                 <div class="slide">
-                    <img src="../Images/A3.jpeg" alt="Sam">
+                    <img src="../Images/A3.webp" alt="Sam - Sphynx Kitten" width="1290" height="971" loading="lazy">
                 </div>
 
                 <div class="slide">
-                    <img src="../Images/A4.jpeg" alt="Honey">
+                    <img src="../Images/A4.webp" alt="Honey - Sphynx Kitten" width="1290" height="964" loading="lazy">
                 </div>
 
             </div>
 
 
-            <button class="nav-arrow prev">
+            <button class="nav-arrow prev" aria-label="Previous slide">
                 &#10094;
             </button>
 
-            <button class="nav-arrow next">
+            <button class="nav-arrow next" aria-label="Next slide">
                 &#10095;
             </button>
 
@@ -154,6 +195,7 @@
     </div>
 
 </section>
+</main>
 
 <script src="../JavaScript/available.js"></script>
 
