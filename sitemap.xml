@@ -9,60 +9,60 @@
     </url>
 
     <url>
-        <loc>https://sphynxworldcattery.com/about.html</loc>
+        <loc>https://sphynxworldcattery.com/HTML/about.html</loc>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://sphynxworldcattery.com/available.html</loc>
+        <loc>https://sphynxworldcattery.com/HTML/available.html</loc>
         <priority>0.9</priority>
     </url>
 
     <url>
-        <loc>https://sphynxworldcattery.com/bambino.html</loc>
+        <loc>https://sphynxworldcattery.com/HTML/bambino.html</loc>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://sphynxworldcattery.com/contact.html</loc>
+        <loc>https://sphynxworldcattery.com/HTML/contact.html</loc>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://sphynxworldcattery.com/elf.html</loc>
+        <loc>https://sphynxworldcattery.com/HTML/elf.html</loc>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://sphynxworldcattery.com/reserve.html</loc>
+        <loc>https://sphynxworldcattery.com/HTML/reserve.html</loc>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://sphynxworldcattery.com/sphynx.html</loc>
+        <loc>https://sphynxworldcattery.com/HTML/sphynx.html</loc>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://sphynxworldcattery.com/story.html</loc>
+        <loc>https://sphynxworldcattery.com/HTML/story.html</loc>
         <priority>0.7</priority>
     </url>
 
 
     <!-- Blog Landing Page -->
     <url>
-        <loc>https://sphynxworldcattery.com/blog/blog.html</loc>
+        <loc>https://sphynxworldcattery.com/HTML/blog/blog.html</loc>
         <priority>0.9</priority>
     </url>
 
     <!-- Blog Articles -->
     <url>
-        <loc>https://sphynxworldcattery.com/blog/article/breeder-guide.html</loc>
+        <loc>https://sphynxworldcattery.com/HTML/blog/articles/breeder-guide.html</loc>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://sphynxworldcattery.com/blog/article/family-pet.html</loc>
+        <loc>https://sphynxworldcattery.com/HTML/blog/articles/family-pet.html</loc>
         <priority>0.8</priority>
     </url>
 
