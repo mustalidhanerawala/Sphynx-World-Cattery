@@ -1,7 +1,12 @@
 User-agent: *
 
-# Allow all pages
+# Allow all indexable pages
 Allow: /
+
+# Block sensitive files from crawlers
+Disallow: /imp.txt
+Disallow: /Contract.pdf
+Disallow: /.git/
 
 # Sitemap location
 Sitemap: https://sphynxworldcattery.com/sitemap.xml
